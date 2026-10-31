@@ -122,6 +122,68 @@
       <!-- Formulaire -->
       <section id="ajouter">
         <h2>Ajouter une candidature</h2>
+
+        <form action="#" method="post">
+          <div>
+            <label for="company">Entreprise :</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              placeholder="Nom de l'entreprise"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="position">Poste :</label>
+            <input
+              type="text"
+              id="position"
+              name="position"
+              placeholder="Ex: Frontend Developer"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="date">Date de candidature :</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+
+          <div>
+            <label for="status">Statut :</label>
+            <select id="status" name="status" required>
+              <option value="">Choisir un statut</option>
+              <option value="envoyee">Envoyée</option>
+              <option value="entretien">Entretien</option>
+              <option value="offre">Offre</option>
+              <option value="refusee">Refusée</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="link">Lien de l'offre :</label>
+            <input
+              type="url"
+              id="link"
+              name="link"
+              placeholder="https://example.com"
+            />
+          </div>
+
+          <div>
+            <label for="notes">Notes :</label>
+            <textarea
+              id="notes"
+              name="notes"
+              rows="4"
+              placeholder="Ajouter des notes..."
+            ></textarea>
+          </div>
+
+          <button type="submit">Ajouter la candidature</button>
+        </form>
       </section>
     </main>
 
